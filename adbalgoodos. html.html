@@ -1,0 +1,429 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>الشركة العالمية الأولى في اليمن</title>
+<meta name="description" content="الشركة العالمية الأولى في اليمن -- حلول متكاملة في التكنولوجيا، الاستشارات، والتوريدات." />
+<style>
+  :root{
+    --accent: #0d6efd;
+    --dark: #0b1a2b;
+    --muted: #6c757d;
+    --bg: #f5f7fb;
+    --card: #ffffff;
+    --rounded: 12px;
+    --maxw: 1100px;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    font-family: "Segoe UI", Tahoma, Arial, "Noto Sans Arabic", sans-serif;
+    background:var(--bg);
+    color:var(--dark);
+    direction:rtl;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    line-height:1.6;
+  }
+  .wrap{max-width:var(--maxw);margin:28px auto;padding:18px;}
+  header{
+    background:linear-gradient(90deg, rgba(13,110,253,0.95), rgba(0,123,255,0.8));
+    color:#fff;
+    border-radius: var(--rounded);
+    padding:28px;
+    box-shadow: 0 10px 30px rgba(13,110,253,0.08);
+  }
+  .brand{display:flex;gap:16px;align-items:center;justify-content:space-between}
+  .brand .left{display:flex;gap:14px;align-items:center}
+  .logo{
+    width:72px;height:72px;border-radius:14px;background:rgba(255,255,255,0.12);
+    display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;
+    box-shadow: 0 6px 18px rgba(11,26,43,0.08);
+  }
+  h1{margin:0;font-size:22px}
+  .tagline{opacity:0.95;margin-top:6px;font-size:14px}
+
+  nav{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
+  nav a{
+    color:rgba(255,255,255,0.95);text-decoration:none;padding:8px 12px;border-radius:8px;
+    background:rgba(255,255,255,0.06);font-size:14px;
+  }
+  .cta{
+    background:#fff;color:var(--dark);padding:10px 14px;border-radius:10px;font-weight:600;
+    text-decoration:none;
+  }
+
+  main{margin-top:18px;display:grid;grid-template-columns:1fr;gap:18px}
+  /* hero card */
+  .hero{
+    display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:center;
+  }
+  .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 8px 24px rgba(11,26,43,0.04);}
+  .hero .left h2{margin-top:0;font-size:20px;color:var(--dark)}
+  .hero .left p{color:var(--muted)}
+  .stats{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+  .stat{flex:1;min-width:120px;background:linear-gradient(180deg,#fff,#fbfdff);padding:12px;border-radius:10px;text-align:center}
+  .stat strong{display:block;font-size:20px;color:var(--accent)}
+  .hero .right{display:flex;flex-direction:column;gap:12px}
+  .contact-card .info{display:flex;gap:10px;align-items:center}
+  .pill{display:inline-block;padding:8px 12px;border-radius:999px;background:rgba(13,110,253,0.08);color:var(--accent);font-weight:600}
+
+  /* services grid */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .service{padding:16px;border-radius:12px;background:linear-gradient(180deg,#fff,#fcfdff);border:1px solid rgba(11,26,43,0.03)}
+  .service h3{margin:0 0 8px 0}
+  .service p{margin:0;color:var(--muted);font-size:14px}
+
+  /* projects */
+  .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  .project{display:flex;gap:12px;align-items:flex-start}
+  .thumb{width:96px;height:64px;border-radius:8px;background:linear-gradient(90deg,#e9f0ff,#eef9ff);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent)}
+  .project h4{margin:0}
+
+  /* team */
+  .team{display:flex;gap:12px;flex-wrap:wrap}
+  .member{flex:1 1 180px;background:linear-gradient(180deg,#fff,#fff);padding:12px;border-radius:10px;text-align:center}
+  .avatar{width:72px;height:72px;border-radius:999px;margin:0 auto;background:linear-gradient(90deg,#f0f7ff,#fff);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent)}
+
+  /* contact & form */
+  .contact-section{display:grid;grid-template-columns:1fr 380px;gap:14px;align-items:start}
+  form label{display:block;font-weight:600;margin-bottom:6px}
+  input[type="text"],input[type="email"],textarea{
+    width:100%;padding:10px;border-radius:8px;border:1px solid rgba(11,26,43,0.08);margin-bottom:10px;font-size:14px;
+  }
+  button.btn{
+    background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;border:none;cursor:pointer;font-weight:700;
+  }
+  .small{font-size:13px;color:var(--muted)}
+
+  footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+  .flex-row{display:flex;gap:12px;align-items:center}
+  /* responsive */
+  @media (max-width:900px){
+    .hero{grid-template-columns:1fr}
+    .grid{grid-template-columns:1fr}
+    .projects{grid-template-columns:1fr}
+    .contact-section{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="left">
+          <div class="logo">ع</div>
+          <div>
+            <h1>الشركة العالمية الأولى في اليمن</h1>
+            <div class="tagline">شركاؤكم في التحول الرقمي، الحلول الهندسية، والتوريدات الموثوقة</div>
+          </div>
+        </div>
+        <div class="flex-row">
+          <nav>
+            <a href="#about">من نحن</a>
+            <a href="#services">الخدمات</a>
+            <a href="#projects">مشاريعنا</a>
+            <a href="#team">الفريق</a>
+            <a href="#contact" class="cta">اتصل بنا</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero card" id="home">
+        <div class="left">
+          <h2>حلول متكاملة تضمن استمرارية أعمالكم وتطويرها</h2>
+          <p>الشركة العالمية الأولى في اليمن تقدم خدمات احترافية في مجالات: تكنولوجيا المعلومات، الشبكات، الاستشارات الهندسية، توريدات الأجهزة والمعدات، والصيانة. نعمل مع جهات حكومية وخاصة لتقديم حلول فعّالة وقابلة للتطبيق.</p>
+
+          <div class="stats" aria-hidden="true">
+            <div class="stat">
+              <strong>15+</strong>
+              <div class="small">سنة خبرة</div>
+            </div>
+            <div class="stat">
+              <strong>120+</strong>
+              <div class="small">مشروع منجز</div>
+            </div>
+            <div class="stat">
+              <strong>80+</strong>
+              <div class="small">عميل راضٍ</div>
+            </div>
+          </div>
+          <div style="margin-top:14px">
+            <a href="#contact" class="cta" style="text-decoration:none">اطلب عرضًا الآن</a>
+            &nbsp; <span class="pill">خدمة الطوارئ 24/7</span>
+          </div>
+        </div>
+
+        <aside class="right contact-card card">
+          <h3>معلومات سريعة</h3>
+          <div style="margin-top:8px">
+            <div class="info"><strong>العنوان:</strong> صنعاء، اليمن</div>
+            <div class="info" style="margin-top:8px"><strong>هاتف:</strong> +967-7XX-XXXXXX</div>
+            <div class="info" style="margin-top:8px"><strong>البريد:</strong> info@firstglobal-ye.com</div>
+            <div style="margin-top:12px"><a href="#services" class="small">تعرّف على خدماتنا</a></div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="card">
+        <h2>من نحن</h2>
+        <p>الشركة العالمية الأولى في اليمن شركة وطنية ذات خبرة تمتد لأكثر من 15 عاماً في مجالات التقنية والهندسة. رسالتنا تقديم حلول عملية ترفع من كفاءة العملاء وتدعم مشاريعهم التقنية والهندسية بأعلى معايير الجودة.</p>
+        <p><strong>رؤيتنا:</strong> أن نكون الشريك الأول للقطاعات الحكومية والخاصة في اليمن في مجال التحول الرقمي والبنية التحتية.</p>
+      </section>
+
+      <!-- SERVICES -->
+      <section id="services" class="card">
+        <h2>خدماتنا</h2>
+        <div class="grid" style="margin-top:12px">
+          <div class="service">
+            <h3>خدمات تكنولوجيا المعلومات</h3>
+            <p>تصميم وتركيب شبكات محلية، حلول سحابة، أمن معلومات، ودعم تقني متواصل.</p>
+          </div>
+          <div class="service">
+            <h3>الاستشارات الهندسية</h3>
+            <p>دراسات مشروع، رقابة الجودة، وإدارة تنفيذ المشاريع الهندسية المدنية والكهروميكانيكية.</p>
+          </div>
+          <div class="service">
+            <h3>توريدات ومعدات</h3>
+            <p>توريد أجهزة الحاسوب، الخوادم، المولدات، وأنظمة الحماية وفق مواصفات عالمية.</p>
+          </div>
+          <div class="service">
+            <h3>صيانة ودعم</h3>
+            <p>عقود صيانة دورية، استجابة للطوارئ، وصيانة ميدانية ومركزية للأجهزة والبنى التحتية.</p>
+          </div>
+          <div class="service">
+            <h3>تدريب وتأهيل</h3>
+            <p>برامج تدريبية مخصصة لتأهيل الكوادر في مجالات الشبكات، الأنظمة، وإدارة المشاريع.</p>
+          </div>
+          <div class="service">
+            <h3>الحلول المتكاملة</h3>
+            <p>تصميم حلول مخصصة لتسهيل عمليات العملاء وربط أنظمة متعددة بفعالية.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="card">
+        <h2>مشاريع مختارة</h2>
+        <div class="projects" style="margin-top:12px">
+          <div class="project">
+            <div class="thumb">ERP</div>
+            <div>
+              <h4>نظام إدارة موارد المؤسسة للمؤسسة الحكومية</h4>
+              <p class="small">تنفيذ وتخصيص نظام ERP متكامل يربط الفروع ويعالج التقارير المالية والإدارية.</p>
+            </div>
+          </div>
+          <div class="project">
+            <div class="thumb">شبكات</div>
+            <div>
+              <h4>بنية تحتية لشبكات مستشفيات</h4>
+              <p class="small">تصميم وتركيب شبكات آمنة وموثوقة لتلبية متطلبات الرعاية الصحية.</p>
+            </div>
+          </div>
+          <div class="project">
+            <div class="thumb">توريد</div>
+            <div>
+              <h4>توريد أجهزة ومولدات لمراكز اتصال</h4>
+              <p class="small">توريد وتركيب مع ضمان وفترات صيانة متفق عليها.</p>
+            </div>
+          </div>
+          <div class="project">
+            <div class="thumb">تدريب</div>
+            <div>
+              <h4>ورش عمل تدريبية للكوادر</h4>
+              <p class="small">برامج عملية لتطوير مهارات الموظفين في تكنولوجيا المعلومات.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TEAM -->
+      <section id="team" class="card">
+        <h2>فريق العمل</h2>
+        <div class="team" style="margin-top:12px">
+          <div class="member">
+            <div class="avatar">عق</div>
+            <h4>المهندس/ علي القدوس</h4>
+            <div class="small">المدير العام</div>
+          </div>
+          <div class="member">
+            <div class="avatar">م</div>
+            <h4>مريم أحمد</h4>
+            <div class="small">مدير تقنية المعلومات</div>
+          </div>
+          <div class="member">
+            <div class="avatar">خ</div>
+            <h4>خالد صالح</h4>
+            <div class="small">رئيس قسم الهندسة</div>
+          </div>
+          <div class="member">
+            <div class="avatar">ن</div>
+            <h4>نجلاء علي</h4>
+            <div class="small">مدير المشاريع</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="card contact-section">
+        <div>
+          <h2>تواصل معنا</h2>
+          <p class="small">نرحب بطلباتكم واستفساراتكم. املأ النموذج أدناه وسنعاود الاتصال بك في أقرب وقت.</p>
+
+          <form id="contactForm" onsubmit="submitForm(event)">
+            <label for="name">الاسم</label>
+            <input id="name" name="name" type="text" placeholder="اسمك الكامل" required>
+
+            <label for="email">البريد الإلكتروني</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+            <label for="subject">الموضوع</label>
+            <input id="subject" name="subject" type="text" placeholder="موضوع الرسالة" required>
+
+            <label for="message">الرسالة</label>
+            <textarea id="message" name="message" rows="6" placeholder="نص الرسالة..." required></textarea>
+
+            <button class="btn" type="submit">إرسال الرسالة</button>
+            <div id="formMessage" class="small" style="margin-top:8px;color:green;display:none">تم إرسال الرسالة بنجاح.</div>
+          </form>
+
+          <div style="margin-top:12px" class="small">
+            أو راسلنا مباشرة على: <strong>info@firstglobal-ye.com</strong> | ت: +967-7XX-XXXXXX
+          </div>
+        </div>
+
+        <aside class="card" style="padding:12px">
+          <h3>موقعنا</h3>
+          <p class="small">صنعاء، الجمهورية اليمنية</p>
+          <div style="height:220px;border-radius:10px;background:#eef4ff;display:flex;align-items:center;justify-content:center;">
+            <!-- ضع هنا iframe خريطة جوجل أو صورة الخريطة -->
+            <div class="small">مكان الخريطة (ضع iframe هنا)</div>
+          </div>
+
+          <h3 style="margin-top:12px">ساعات العمل</h3>
+          <p class="small">السبت - الخميس: 08:00 - 17:00</p>
+          <p class="small">الجمعة: طوارئ فقط</p>
+        </aside>
+      </section>
+
+      <!-- LEGAL / DOWNLOAD / BIG CODE SNIPPET (placeholder for "كود ضخم") -->
+      <section class="card">
+        <h2>مستندات وتنزيلات</h2>
+        <p class="small">يمكنك إضافة ملفات العطاءات، كتالوجات المنتجات، أو أي مستندات أخرى هنا.</p>
+
+        <h3 style="margin-top:12px">ملف: كود تكويني (مثال)</h3>
+        <p class="small">فيما يلي مربع يحتوي على مثال "كود ضخم" يمكن أن يمثل تكوين جهاز/نظام أو مقطع نصي تقني -- قم بتعديله بما يناسب شركتك:</p>
+
+        <pre style="background:#0b1220;color:#e6eef8;padding:14px;border-radius:10px;overflow:auto;max-height:320px;">
+/* مثال: تكوين جهاز شبكي -- CONFIG_SNIPPET */
+device {
+  id: "FGY-DEV-2025-001";
+  name: "GATEWAY-MAIN";
+  location: {
+    country: "Yemen";
+    city: "Sanaa";
+    site: "DataCenter-1";
+  }
+  network {
+    interfaces: [
+      { name: "eth0", ip: "10.10.0.1/24", role: "mgmt", vlan: 10 },
+      { name: "eth1", ip: "192.168.0.1/24", role: "internal" }
+    ];
+    routing {
+      static: [
+        { dest: "0.0.0.0/0", via: "10.10.0.254" }
+      ];
+      nat: true;
+    }
+    security {
+      firewall {
+        default_policy: "drop";
+        allow: [
+          { proto: "tcp", port: 22, from: "10.10.0.0/24", desc: "SSH internal" },
+          { proto: "tcp", port: 443, from: "0.0.0.0/0", desc: "HTTPS public" }
+        ];
+      }
+      vpn: {
+        type: "ipsec";
+        peers: [
+          { peer_id: "HQ", endpoint: "203.0.113.10", enc: "aes256", auth: "sha256" }
+        ];
+      }
+    }
+  }
+  maintenance {
+    backup: "daily";
+    firmware_update: "manual";
+    contact: "ops@firstglobal-ye.com";
+  }
+}
+        </pre>
+
+        <div style="margin-top:12px">
+          <button onclick="copyPre()" class="btn">نسخ الكود</button>
+          <span class="small" style="margin-left:10px">يمكنك تعديل هذا المقطع ليصبح التكوين الحقيقي لأجهزة شركتك.</span>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>© <strong>الشركة العالمية الأولى في اليمن</strong> -- جميع الحقوق محفوظة</div>
+      <div style="margin-top:6px" class="small">العنوان: صنعاء • الهاتف: +967-7XX-XXXXXX • البريد: info@firstglobal-ye.com</div>
+    </footer>
+  </div>
+
+  <script>
+    // بسيط: محاكاة إرسال النموذج محلياً (بدون سيرفر)
+    function submitForm(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const subject = document.getElementById('subject').value.trim();
+      const message = document.getElementById('message').value.trim();
+      if(!name||!email||!subject||!message){
+        alert('الرجاء تعبئة جميع الحقول');
+        return;
+      }
+      // هنا: يمكنك استبدال ذلك بطلب fetch إلى API سيرفرك
+      document.getElementById('formMessage').style.display = 'block';
+      setTimeout(()=>{ document.getElementById('formMessage').style.display = 'none'; }, 5000);
+      document.getElementById('contactForm').reset();
+    }
+
+    // نسخ الكود الكبير
+    function copyPre(){
+      const pre = document.querySelector('pre');
+      const text = pre.innerText;
+      if(navigator.clipboard){
+        navigator.clipboard.writeText(text).then(()=>{
+          alert('تم نسخ الكود بنجاح');
+        }).catch(err=>{
+          fallbackCopy(text);
+        });
+      } else {
+        fallbackCopy(text);
+      }
+    }
+    function fallbackCopy(text){
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy');
+        alert('تم نسخ الكود (طريقة احتياطية)');
+      } catch (e){
+        alert('فشل النسخ تلقائياً -- انسخ المحتوى يدوياً');
+      }
+      ta.remove();
+    }
+  </script>
+</body>
+</html>.
